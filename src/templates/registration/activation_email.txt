@@ -1,0 +1,11 @@
+{% load i18n %}
+
+{% trans "Aktywacja konta na" %} {{ site.name }}:
+
+Kliknij sobie ponizej  w to cos
+
+http://{{ site.domain }}{% url 'registration_activate' activation_key %}
+
+{% blocktrans %}Powyższy link jest ważny przez {{ expiration_days }} dni.{% endblocktrans %}
+
+-Marcin
