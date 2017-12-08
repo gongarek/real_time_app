@@ -4,7 +4,7 @@ from .models import SignUp
 
 
 class ContactForm(forms.Form):
-    nazwa = forms.CharField(required = False)
+    nazwa = forms.CharField(required=False)
     email = forms.EmailField()
     informacja = forms.CharField(widget=forms.Textarea)
 

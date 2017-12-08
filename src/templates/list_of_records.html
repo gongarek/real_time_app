@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+        {% if queryset %}
+            <h2>Lista zaakceptowanych wizyt:</h2>
+            <table class='table'>
+            <tr><td>Numer</td><td>Data wizyty</td><td> Poczatek wizyty </td><td> Koniec wizyty </td></tr>
+            {% for instance in queryset %}
+                <tr><td>{{forloop.counter}}</td><td>{{ instance.day}},</td><td> {{ instance.start_time}} </td><td> {{ instance.end_time }} </td></tr>
+            {% endfor %}
+            </table>
+        {% endif %}
+{% endblock %}

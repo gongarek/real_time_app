@@ -20,6 +20,8 @@
 
         {% if request.user.is_authenticated %}
         <li><a href="{% url 'recrutation' %}"><u>Rekrutacja</u></a></li>
+        <li><a href="{% url 'records' %}">Zapisy</a></li>
+        <li><a href="{% url 'listofrecords' %}">Lista Wizyt</a></li>
         {% endif %}
 
       </ul>

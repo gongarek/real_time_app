@@ -17,7 +17,7 @@ make_niezaakceptowany.short_description = "zaznacz, by niezaakceptowac"
 class SignUpAdmin(admin.ModelAdmin):
     list_display = ["__unicode__", "full_name", "timestamp", "updated", "status" ] # "akceptacja"]
     form = SignUpForm
-    actions=[make_akceptacja, make_niezaakceptowany]
+    actions = [make_akceptacja, make_niezaakceptowany]
 
 admin.site.register(SignUp, SignUpAdmin )
 
@@ -25,8 +25,8 @@ admin.site.register(SignUp, SignUpAdmin )
 
 
 # class CzlonkowieAdmin(admin.ModelAdmin):
-#     list_display = [ "__unicode__",]  #siep ieprzy
+#     list_display = [ "__unicode__",]
 #     class Meta:
 #         model = Czlonkowie
-#     list_display = [ "__unicode__"]  #siep ieprzy
+#     list_display = [ "__unicode__"]
 # admin.site.register(Czlonkowie, CzlonkowieAdmin)

@@ -36,7 +36,9 @@ INSTALLED_APPS = (
     'crispy_forms',
     'registration',
     #my apps
+    'events',
     'newsletter',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -77,7 +79,7 @@ WSGI_APPLICATION = 'trydjango18.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'dbghghhhhhh.sqlite3'),
     }
 }
 

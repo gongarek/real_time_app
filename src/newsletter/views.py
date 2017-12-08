@@ -69,3 +69,6 @@ def recrutation(request):
             "title": "Dziekujemy"
         }
     return render(request, "recrutation.html", context)
+
+
+    
